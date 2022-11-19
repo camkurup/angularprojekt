@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Upload dit Billede</h2>
+<mat-dialog-content [formGroup]="uploadForm">
+  <img [src]="imgFile" style="width: 400px; height:400px">
+  <mat-form-field>
+      <input matInput
+              placeholder="Billedets navn"
+             formControlName="name">
+  </mat-form-field>
+<button (click)="save()">Gem Billede</button>
+<button (click)="close()">Afslut</button>
+</mat-dialog-content>
